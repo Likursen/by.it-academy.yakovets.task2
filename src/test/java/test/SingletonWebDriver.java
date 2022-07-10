@@ -15,4 +15,9 @@ public class SingletonWebDriver {
         }
         return webDriver;
     }
+
+    public static void driverQuit(){
+        webDriver.quit();
+        webDriver = null;
+    }
 }

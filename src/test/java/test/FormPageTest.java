@@ -1,19 +1,13 @@
 package test;
 
-import org.junit.AfterClass;
 import org.junit.Assert;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
 import page.FormPage;
 import page.field.Gender;
 import page.field.Label;
 
-public class FormPageTest extends BaseTest{
-
+public class FormPageTest extends AbstractTest {
     private final FormPage formPage = new FormPage();
-
-
 
     @Test
     public void enterFirstnameTest() {
@@ -61,5 +55,4 @@ public class FormPageTest extends BaseTest{
         boolean submitButtonValueCorrect = formPage.isSubmitButtonValueCorrect();
         Assert.assertTrue(submitButtonValueCorrect);
     }
-
 }

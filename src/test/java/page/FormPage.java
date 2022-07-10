@@ -5,8 +5,7 @@ import page.field.Gender;
 import page.field.Label;
 import utils.Utils;
 
-public class FormPage extends Page {
-
+public class FormPage extends AbstractPage {
     private final By firstnameInputLocator = By.xpath("//input[@name='firstname']");
     private final By lastnameInputLocator = By.xpath("//input[@name='lastname']");
     private final By genderLabelLocator = By.xpath("//label[text()='Пол']");

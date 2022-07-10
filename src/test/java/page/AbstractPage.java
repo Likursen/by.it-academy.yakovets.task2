@@ -4,11 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import test.SingletonWebDriver;
 
-public class Page {
+public abstract class AbstractPage {
     public final WebDriver webDriver = SingletonWebDriver.getWebDriver();
-
-    public Page() {
-    }
 
     protected void enterStringValue(By locator, String text) {
         webDriver.findElement(locator)
